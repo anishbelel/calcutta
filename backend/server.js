@@ -29,7 +29,7 @@ app.get('/calculate', (req, res) => {
   }
 
   // Execute the C++ program with x and y as arguments
-  execFile(path.join(__dirname, 'compute.exe'), [x, y], (error, stdout, stderr) => {
+  execFile(path.join(__dirname, 'compute'), [x, y], (error, stdout, stderr) => {
     if (error) {
       console.error(error);
       res.status(500).send(stderr);
