@@ -28,7 +28,7 @@ function Shortest() {
         try {
             console.log(x);
             console.log(y);
-            const response = await axios.get('http://localhost:3001/calculate', {
+            const response = await axios.get('https://calcutta.onrender.com', {
                 params: { x, y }
             });
             console.log(response.data);
