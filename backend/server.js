@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Endpoint to handle GET request with query   parameters
-app.get('/calculate', (req, res) => {
+app.get('/', (req, res) => {
   const { x, y } = req.query;
 
   if (!x || !y) {
