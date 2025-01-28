@@ -3,7 +3,7 @@ import { execFile } from 'child_process';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import cors from 'cors'; // Import CORS middleware
-// Import required modules
+// Import required module
 import dotenv from 'dotenv';
 
 dotenv.config();
